@@ -24,6 +24,7 @@ public class VendingMachineTreasury {
 
 	public List<Coin> makeChange(Double price, Double payment) {
 		//TODO - Implement me!
+		// NOTE incoming payments are not added to disburse-able funds
 		return null;
 	}
 
