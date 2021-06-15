@@ -1,35 +1,34 @@
 import java.util.List;
 
 enum Coin {
-	DOLLAR(1.0),
-	QUARTER(0.25),
-	DIME(0.10),
-	NICKLE(0.05),
-	PENNY(0.01),
+	DOLLAR(100),
+	QUARTER(25),
+	DIME(10),
+	NICKLE(5),
+	PENNY(1),
 	;
 
-	private Double value;
+	private Integer value;
 
-	Coin(Double value) {
+	Coin(Integer value) {
 		this.value = value;
 	}
 
-	public Double getValue() {
+	public Integer getValue() {
 		return this.value;
 	}
 }
 
 public class VendingMachineTreasury {
-	//TODO - Maintain State - How many Quarters/Dimes/Nickles/Pennies do I have?
+	// TODO - Maintain State - How many Quarters/Dimes/Nickles/Pennies do I have?
 
-	public List<Coin> makeChange(Double price, Double payment) {
-		//TODO - Implement me!
-		// NOTE incoming payments are not added to disburse-able funds
+	public List<Coin> makeChange(Integer price, List<Coin> payment) {
+		// TODO - Implement me!
 		return null;
 	}
 
 }
 
 
-//TODO Write a couple tests
+// TODO Write a couple tests
 
